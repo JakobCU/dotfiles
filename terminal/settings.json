@@ -42,9 +42,9 @@
                 "background": "#1D2934",
                 "colorScheme": "One Half Dark",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "font": 
+                "font":
                 {
-                    "face": "SauceCodePro Nerd Font"
+                    "face": "SauceCodePro NFM"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
@@ -78,9 +78,9 @@
             },
             {
                 "colorScheme": "Vintage",
-                "font": 
+                "font":
                 {
-                    "face": "CaskaydiaCove Nerd Font"
+                    "face": "CaskaydiaCove NFM"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
