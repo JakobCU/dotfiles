@@ -42,7 +42,7 @@
                 "background": "#1D2934",
                 "colorScheme": "One Half Dark",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "font":
+                "font": 
                 {
                     "face": "SauceCodePro NFM"
                 },
@@ -77,8 +77,8 @@
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "colorScheme": "Vintage",
-                "font":
+                "colorScheme": "Dimidium",
+                "font": 
                 {
                     "face": "CaskaydiaCove NFM"
                 },
