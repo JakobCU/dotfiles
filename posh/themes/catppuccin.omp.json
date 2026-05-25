@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "final_space": true,
+  "patch_pwsh_bleed": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "foreground": "#1e1e2e",
+          "background": "#cba6f7",
+          "template": " {{ .UserName }} "
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#cdd6f4",
+          "background": "#313244",
+          "template": "  {{ .Path }} ",
+          "properties": {
+            "style": "agnoster_short",
+            "max_depth": 1,
+            "folder_separator_icon": " › ",
+            "home_icon": "~",
+            "folder_icon": ""
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#1e1e2e",
+          "background": "#a6e3a1",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#f9e2af{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f5c2e7{{ end }}",
+            "{{ if gt .Ahead 0 }}#94e2d5{{ end }}",
+            "{{ if gt .Behind 0 }}#fab387{{ end }}"
+          ],
+          "template": " {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }} ",
+          "properties": {
+            "branch_template": "{{ trunc 25 .Branch }}",
+            "fetch_status": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": false,
+      "segments": [
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "#cba6f7",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#f38ba8{{ end }}"
+          ],
+          "template": "❯ ",
+          "properties": {
+            "always_enabled": true
+          }
+        }
+      ]
+    }
+  ]
+}
