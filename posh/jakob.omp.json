@@ -14,16 +14,16 @@
           "style": "diamond",
           "leading_diamond": "",
           "trailing_diamond": "",
-          "foreground": "#081018",
-          "background": "#38bdf8",
+          "foreground": "#1a1b26",
+          "background": "#7aa2f7",
           "template": " {{ .UserName }} "
         },
         {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "",
-          "foreground": "#e6f1f5",
-          "background": "#14323f",
+          "foreground": "#c0caf5",
+          "background": "#24283b",
           "template": "  {{ .Path }} ",
           "properties": {
             "style": "agnoster_short",
@@ -37,13 +37,13 @@
           "type": "git",
           "style": "powerline",
           "powerline_symbol": "",
-          "foreground": "#07130f",
-          "background": "#34d399",
+          "foreground": "#1a1b26",
+          "background": "#9ece6a",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#2dd4bf{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#22c55e{{ end }}",
-            "{{ if gt .Ahead 0 }}#6ee7b7{{ end }}",
-            "{{ if gt .Behind 0 }}#14b8a6{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#e0af68{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#bb9af7{{ end }}",
+            "{{ if gt .Ahead 0 }}#7dcfff{{ end }}",
+            "{{ if gt .Behind 0 }}#ff9e64{{ end }}"
           ],
           "template": " {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }} ",
           "properties": {
@@ -61,9 +61,9 @@
         {
           "type": "status",
           "style": "plain",
-          "foreground": "#7dd3fc",
+          "foreground": "#7aa2f7",
           "foreground_templates": [
-            "{{ if gt .Code 0 }}#f87171{{ end }}"
+            "{{ if gt .Code 0 }}#f7768e{{ end }}"
           ],
           "template": "❯ ",
           "properties": {
